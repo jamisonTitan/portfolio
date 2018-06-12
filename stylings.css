@@ -1,5 +1,6 @@
 html{
- text-align:center;   
+ text-align:center;  
+ background-color:lightGray;
 }
 #opaque{
  border: 3px solid black;
@@ -27,7 +28,6 @@ html{
     height:20%;
 }
 .mid{
-    background-color:white;
     color:black;
     justify-content:center;
     flex-direction:row;
@@ -45,12 +45,11 @@ html{
     
 }
 .links{
- padding:5px;   
+ padding:5px; 
 }
 .headerBar{
     display:flex;
     justify-content:center;
-    display:flex;
     background-image: url("https://www.dealfuel.com/wp-content/uploads/2015/06/tessellation-patterns-purple-1024x576.jpg");
     opacity:0.8;
     width:100%;
@@ -59,15 +58,38 @@ html{
     border: 3px solid black;
 }
 .gallery{
+    padding-top:60px;
     flex-wrap:wrap;
     flex-direction:column;
+    justify-content: center;
 }
 .inGallery{
     width:250px;
     height:250px;
-    padding:10px;
-    transition: transform .2s; /* Animation */
+    padding: 5px;
+    background-color:black;
+    transition: transform .2s;
 }
 .inGallery:hover{
-    transform: scale(1.5); 
+    transform: scale(2.0); 
+    padding:10px;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    top:70%;
+    display:none;
+    left: 0;
+    margin: 0;
+    width:100%;
+    padding:0;
+    list-style:none;
+    border:2px solid black;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
+    background:lightGray;
 }

@@ -2,9 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylings.css" />
-        <script src="script.js"></script>
         <title>Portfolio</title>
-        <script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="headerBar">
@@ -24,7 +24,13 @@
                 <div id="content">
                 <p class="inRow"> Greetings! I am a SanFrancisco resident and a programmer. I have experience in Javascript, Html, css, and Java. In my free time I am also a visual artist and a musician. </p>
                 <div id="portfolio">
-                    <h3 class="links" id="art" >visual art -</h3>
+                    <div class="dropdown">
+                        <h3 class="links" id="art" >visual art -</h3>
+                        <ul class="dropdown-menu">
+                            <li><a href="">gallery</a></li>
+                            <li><a href="">Instagram</a></li>
+                        </ul>
+                    </div>    
                     <h3 class="links" id="code" > code -</h3>
                     <h3 class="links" id="music"> music</h3>
                 </div>
@@ -46,5 +52,6 @@
          <div class="row footer">
             <p>Copyright © Oppong LLC 2018</p>
         </div>
+        
     </body>
 </html>

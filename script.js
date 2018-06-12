@@ -1,5 +1,8 @@
-$(document).ready(function () {
-    $("#art").click(function myfunc(){
+$(document).ready(function (){
+    $("#art").click(function(){
         alert("it works!");
     });
+
+    
+    
 });
